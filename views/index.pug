@@ -1,0 +1,10 @@
+html
+  head
+    title= title
+  body
+    h1= message
+
+    ul
+  each val in links
+    li 
+      a(href = path + "/" +val)=val

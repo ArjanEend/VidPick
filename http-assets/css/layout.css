@@ -1,0 +1,444 @@
+body {
+	font-family: Helvetica, Arial, Verdana;
+	background: #efefef url('../img/ticks.png') repeat 0 0;
+	margin:15px 0 0 0;
+	color:#666;
+	font-size:12px;
+}
+
+h3 {
+	color: #CD2929;
+	font-weight: bold;
+	font-size: 32px;
+}
+
+div.header {
+	width: 100%;
+	height: 60px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	background: #CD2929 url('../img/halftone.png') repeat 0 0;
+	display: block;
+	position: relative;
+	color: #efefef;
+	border-radius: 0px 0px 8px 8px;
+}
+
+nav {
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 6px;
+	padding-bottom: 20px;
+	display: block;
+	font-weight: bold;
+	font-size: 32px;
+	padding-left: 9px;
+	padding-right:  9px;
+	width: 960px;
+}
+
+nav ul {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	float: right;
+}
+
+nav a {
+	color: #efefef;
+}
+
+nav a:hover
+{
+	color: #cdcdcd;
+}
+
+nav li {
+	display: block;
+	position: relative;
+	float: left;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+footer {
+	width: 100%;
+	height: 60px;
+	background: #CD2929 url('../img/halftone.png') repeat 0 0;
+	bottom: 0px;
+	padding: 4px;
+}
+
+footer p {
+	width: 960px;
+	margin: 20px auto;
+	color: #efefef;
+	text-align: right;
+}
+
+.tab-content {
+	-webkit-transition: height 5s ease;
+  -moz-transition: height 1s ease;
+  -o-transition: height 1s ease;
+  transition: height 1s ease;
+  width: 960px;
+  max-height: 1200px;
+  height: 100%;
+}
+
+#info {
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;				
+	background: #CD2929 url('../img/halftone.png') repeat 0 0;
+	border:1px solid  #fbeed5;
+	width:95%;
+	max-width:900px;
+	margin:0 auto 40px auto;
+	font-family:arial;
+	font-size:12px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+}
+
+	#info .info-wrapper {
+		padding:10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+
+	}
+	
+	#info a {
+		color:#c09853;
+		text-decoration:none;
+	}
+	
+	#info p {
+		margin:5px 0 0 0;
+	}
+#about {
+	top: auto;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	display: block;
+}
+
+.line {
+	border-bottom: dashed;
+	border-width: 1px;
+	border-color: #efefef;
+	margin: 6px;
+}
+
+.greything{
+	width: 479px;
+	height: 100%;
+	position: absolute;
+	background: #efefef url('../img/ticks.png') repeat 0 0;
+}
+
+.container { 
+	position: relative; 
+	width: 960px; 
+	margin: 0 auto;
+	padding: 0px;
+	top: 0px;
+	height: 100%;
+	-webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;	
+}
+
+.gallery{
+	    padding: 5px;
+	    margin: 5px;
+}
+
+.gallery img {
+	margin: 5px;
+}
+
+.imgleft{
+	float: left;
+	clear: none;
+	padding-right: 22px;
+	margin-bottom: 20px;
+}
+
+.imgright{
+	float:right;
+	clear: none;
+	padding-left: 22px;
+	margin-bottom: 20px;
+}
+ 
+#filters {
+	padding:0;
+	list-style:none;
+}
+
+	#filters li {
+		float:left;
+		margin-bottom: 0px;
+	}
+	
+	#filters li span {
+		display: block;
+		padding:5px 20px;		
+		text-decoration:none;
+		color:#666;
+		cursor: pointer;
+	}
+	
+	#filters li span.active {
+		background: #CD2929 url('../img/halftone.png') repeat 0 0;
+		color:#efefef;
+		border-radius: 8px 8px 0px 0px;
+	}
+ 
+#portfoliolist {
+
+	background: #CD2929 url('../img/halftone.png') repeat 0 0;
+	padding-top: 22px;
+	//-webkit-transition: all 1s ease;
+  //-moz-transition: all 1s ease;
+  //-o-transition: all 1s ease;
+  //transition: all 1s ease;
+  border-radius: 0px 0px 8px 8px;
+}
+ 
+ .content-box {
+ 	margin-bottom: 22px;
+ 	margin-left: 22px;
+ 	margin-right: 14px;
+ 	float:left;
+ }
+
+ .rotate{
+
+
+ 	-webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;	
+ }
+
+ .rotate:hover{
+
+
+ }
+
+ .span5{
+ 	clear: both;
+ 	text-align: right;
+ 	margin-bottom: 32px;
+ }
+
+#portfoliolist .portfolio {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	width: 23%;
+	margin-left: 1%;
+	margin-right: 1%;
+	margin-bottom: 22px;
+	max-height: 124px;
+	display:none;
+	float:left;
+	overflow:hidden;
+}
+
+	.portfolio-wrapper {
+		overflow:hidden;
+		position: relative !important;
+		background: #666;
+		cursor:pointer;
+	}
+
+	.text-title {
+		font-size: 12px;
+	}
+
+	.portfolio img {
+		max-width:100%;
+		position: relative;
+	}
+	
+	.portfolio .label {
+		position: absolute;
+		width: 100%;
+		height:40px;
+		top: 124px;
+		color:#CD2929;
+	}
+
+	.portfolio a {
+		color:#CD2929;
+		font-weight: bold;
+	}
+
+		.portfolio .label-bg {
+			background: #efefef;
+			width: 100%;
+			height:100%;
+			position: absolute;
+			top:0;
+			left:0;
+		}
+	
+		.portfolio .label-text {
+			color:#CD2929;
+			position: relative;
+			z-index:500;
+			padding:5px 8px;
+		}
+			
+			.portfolio .text-category {
+				display:block;
+				font-size:9px;
+				color:#CD2929;
+			}
+	
+
+
+/* #Clearing */
+
+/* Self Clearing Goodness */
+.container:after, #portfoliolist:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0; }
+.row:after,
+.clearfix:after {
+  clear: both; }
+.row,
+.clearfix {
+  zoom: 1; 
+  margin: 0px;
+  padding-left: 9px;
+  padding-right: 9px;
+  margin-bottom: 11px;
+}
+
+.bottommarge{
+	margin-bottom: 30px;
+}
+
+.red {
+	background: #CD2929 url('../img/halftone.png') repeat 0 0;
+	border-radius: 8px;
+}
+
+.tab-pane .row p{
+	width: 320px;
+}
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.slider{
+	width: 960px; /*Same as width of the large image*/
+	position: relative;
+	/*Instead of height we will use padding*/
+	padding-top: 520px; /*That helps bring the labels down*/
+	
+	margin: 0px auto;
+	
+	/*Lets add a shadow*/
+	background: #CD2929 url('../img/halftone.png') repeat 0 0;
+	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
+	border-radius: 0px 0px 8px 8px;
+}
+
+
+/*Last thing remaining is to add transitions*/
+.slider>img{
+	position: absolute;
+	left: 0; top: 0; bottom: 0; right: 0;
+	width: auto;
+	height: auto;
+	max-height: 520px;
+	max-width: 960px;
+	margin: auto;
+	transition: all 0.5s;
+	border-radius: 8px 8px 8px 8px;
+}
+
+.slider input[name^='slide_switch'] {
+	display: none;
+}
+
+.slider label {
+	/*Lets add some spacing for the thumbnails*/
+	margin: 18px 0 0 18px;
+	border: 3px solid #888;
+	
+	float: right;
+	clear: left;
+	cursor: pointer;
+	transition: all 0.5s;
+	
+	/*Default style = low opacity*/
+	opacity: 0.6;
+}
+
+.slider .clearlabel {
+	clear: right;
+}
+
+div .span4 {
+	float: left;
+	position: relative;
+	margin: 0px 9px;
+	padding-right: 20px;
+}
+
+.span4 img {
+	width: 64px;
+	height: 64px;
+}
+
+div .right {
+	float: right;
+	text-align: right;
+}
+
+.slider label img{
+	display: block;
+}
+
+/*Time to add the click effects*/
+.slider input[name^='slide_switch']:checked+label {
+	border-color: #CD2929;
+	opacity: 1;
+}
+/*Clicking any thumbnail now should change its opacity(style)*/
+/*Time to work on the main images*/
+.slider input[name^='slide_switch'] ~ img {
+	opacity: 0;
+	transform: scale(1.1);
+}
+/*That hides all main images at a 110% size
+On click the images will be displayed at normal size to complete the effect
+*/
+.slider input[name^='slide_switch']:checked+label+img {
+	opacity: 1;
+	transform: scale(1);
+}

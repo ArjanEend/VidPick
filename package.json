@@ -1,0 +1,28 @@
+{
+  "name": "NodeFrames",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArjanEend/NodeFrames.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArjanEend/NodeFrames/issues"
+  },
+  "homepage": "https://github.com/ArjanEend/NodeFrames#readme",
+  "dependencies": {
+    "discord.js": "^11.4.2",
+    "express": "^4.16.4",
+    "ffmpeg": "0.0.4",
+    "pug": "^2.0.4",
+    "videostream": "^3.2.0",
+    "vlc-simple-player": "^0.5.0"
+  }
+}
