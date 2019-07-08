@@ -4,6 +4,12 @@ html
   body
     h1= message
 
+    a(href = path + "/stop") stop playing
+    br
+    br
+    if prev != 'undefined'
+      a(href = prev + "/") previous page
+
     ul
   each val in links
     li 
