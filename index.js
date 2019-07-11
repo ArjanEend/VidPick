@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 80;
+const port = 1234;
 const vlclib = require('node-vlc-http');
 const vlc = new vlclib('localhost', 8080, '', 'avcast');
 vlc._sendCommand = vlc._command;
@@ -26,6 +26,18 @@ app.get("/stop", function(req, res)
     res.redirect('back');
 });
 
+app.get("/loop", function(req, res)
+{
+    vlc.toggleLoop();
+    res.redirect('back');
+});
+
+app.get("/fullscreen", function(req, res)
+{
+    vlc.toggleFullscreen();
+    res.redirect('back');
+});
+
 app.get(/^(.+)$/, function(req, res){
     if(req.path.toLowerCase().endsWith("/stop"))
     {
@@ -33,7 +45,19 @@ app.get(/^(.+)$/, function(req, res){
         res.redirect('back');
         return;
     }
-    if(req.path.toLowerCase().endsWith(".mp4"))
+    if(req.path.toLowerCase().endsWith("/loop"))
+    {
+        vlc.toggleLoop();
+        res.redirect('back');
+        return;
+    }
+    if(req.path.toLowerCase().endsWith("/fullscreen"))
+    {
+        vlc.toggleFullscreen();
+        res.redirect('back');
+        return;
+    }
+    if(req.path.toLowerCase().endsWith(".mp4") || req.path.toLowerCase().endsWith(".wmv") || req.path.toLowerCase().endsWith(".mkv"))
     {
         vlc.addToQueueAndPlay(encodeURI(basedir + req.path));
         console.log(encodeURI(basedir + req.path));
@@ -45,6 +69,11 @@ app.get(/^(.+)$/, function(req, res){
     }
     let results = dirs(basedir + req.path);
     let previousLink = req.path.substring(0, req.path.lastIndexOf("/"));
+
+    for(let i = 0; i < results.length; i++)
+    {
+        results[i] = encodeURI(results[i]);
+    }
 
     res.render('index', { title: "AVCast", prev: previousLink, message: "Directories", path: req.path, links: results });
 });
